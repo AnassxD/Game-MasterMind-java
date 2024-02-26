@@ -49,7 +49,7 @@
     </style>
 </head>
 <body>
-<h1>Le jeu mastermind ============</h1>
+<h1>Le jeu mastermind </h1>
 <form action="ServletJeu" method="post">
     <label for="nombre">Entrer un nombre:</label><br>
     <input type="number" id="nombre" name="nombrePropose"><br>
@@ -57,6 +57,7 @@
     <input type="reset" value="Réinitialiser le jeu">
 </form>
 <div><i></i></div>
+
 <%
     JeuBean b=(JeuBean) request.getAttribute("bean");
     if (b!=null) out.println(b.getMsg());
